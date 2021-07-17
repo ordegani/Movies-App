@@ -1,12 +1,13 @@
 import React, {useEffect, useState} from 'react';
 
-const main = () =>{
+export default main = () =>{
+//set 
 const [movies, setMovies] = useState([]);
-
+//fetch 
 const apikey = `b8dd69ac`;
 
 const getMovies = async () => {
-    const response = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=${apikey}`);
+    const response = await fetch(`http://www.omdbapi.com/?t=free+willy&apikey=${apikey}`);
     const data = await response.json();
     setMovies(data.hits);
       console.log(data.hits);
