@@ -1,11 +1,17 @@
-// import React from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import './App.css';
 import Main from "./components/Main.js"
 
 function App() {
-  <Main/>
   return(
-    <h1>hi</h1>
+      <Router>
+        <div className="container">
+        {/* <Navbar /> */}
+        <br/>
+        <Route exact path="/" component={Main} />
+        </div>
+      </Router>
   )
 }
 

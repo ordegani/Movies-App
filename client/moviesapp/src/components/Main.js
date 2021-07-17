@@ -14,14 +14,14 @@ const Main = () => {
 
     setMovies(data.hits);
 
-    console.log(movies);
+    console.log(data);
   };
   //useEffect
   useEffect(() => {
     getMovies();
-  });
+  },[]);
 
-  return <div>hi</div>;
+  return <div>HI!</div>;
 };
 
 export default Main;
