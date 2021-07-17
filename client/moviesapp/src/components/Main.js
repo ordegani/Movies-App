@@ -1,19 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Axios from "axios";
+// import Axios from "axios";
 
-export default Main = () => {
+const Main = () => {
   //set
   const [movies, setMovies] = useState([]);
-
-  //useEffect
-  useEffect(() => {
-    getMovies();
-  }, []);
-  
   //fetch
-  const apikey = `b8dd69ac`;
-
   const getMovies = async () => {
+    const apikey = `b8dd69ac`;
     const response = await fetch(
       `http://www.omdbapi.com/?t=free+willy&apikey=${apikey}`
     );
@@ -21,6 +14,14 @@ export default Main = () => {
 
     setMovies(data.hits);
 
-    console.log(data.hits);
+    console.log(movies);
   };
+  //useEffect
+  useEffect(() => {
+    getMovies();
+  }, []);
+
+  return <h1>({movies})</h1>;
 };
+
+export default Main;
