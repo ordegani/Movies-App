@@ -19,7 +19,7 @@ const Main = () => {
   //useEffect
   useEffect(() => {
     getMovies();
-  },[]);
+  }, []);
 
   return <div>HI!</div>;
 };
