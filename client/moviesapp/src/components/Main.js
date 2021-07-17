@@ -19,9 +19,9 @@ const Main = () => {
   //useEffect
   useEffect(() => {
     getMovies();
-  }, []);
+  });
 
-  return <h1>({movies})</h1>;
+  return <div>hi</div>;
 };
 
 export default Main;
