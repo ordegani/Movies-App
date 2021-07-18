@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Movie from "./Movie";
 import "../App.css";
 // import Axios from "axios";
 
@@ -51,16 +50,9 @@ const Main = () => {
         </button>
       </form>
       <div className="moviesContainer">
-        {/* {movies.map((movie, index) => ( */}
-        <Movie
-          key={movie.index}
-          id={movie.index}
-          title={movie.Poster}
-          image={movie.Title}
-          ImdbRating={movie.imdbRating}
-        ></Movie>
-        {/* )) */}
-        {/* } */}
+        <h1>{movie.Title}</h1>
+        <img src={movie.Poster} alt="" />
+        <h3>{movie.imdbRating}</h3>
       </div>
     </div>
   );
