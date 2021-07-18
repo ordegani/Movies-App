@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Movie, { listIndexes } from "../../../../models/movieModel";
 // import Axios from "axios";
 
 const Main = () => {
@@ -21,7 +22,19 @@ const Main = () => {
     getMovies();
   }, []);
 
-  return <div>HI!</div>;
+  return (
+    <div>
+      {movies.map((movie, index) => (
+        <Movie
+          key={movie.index}
+          id={movie.index}
+          title={movie.Poster}
+          image={movie.Title}
+          ImdbRating={movie.imdbRating}
+        ></Movie>
+      ))}
+    </div>
+  );
 };
 
 export default Main;
