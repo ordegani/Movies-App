@@ -4,7 +4,7 @@ import Movie from "./Movie";
 
 const Main = () => {
   //set
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState("");
   //fetch
   const getMovies = async () => {
     const apikey = `b8dd69ac`;
@@ -13,17 +13,17 @@ const Main = () => {
     );
     const data = await response.json();
 
-    setMovies(data.hits);
-
-    console.log(data);
+    setMovies(data);
   };
+  console.log(movies);
+
   //useEffect
   useEffect(() => {
     getMovies();
   }, []);
 
   return (
-    <div className = "moviesContainer">
+    <div className="moviesContainer">
       {movies.map((movie, index) => (
         <Movie
           key={movie.index}
