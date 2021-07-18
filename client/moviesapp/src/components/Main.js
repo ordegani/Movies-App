@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Movie, { listIndexes } from "../../../../models/movieModel";
+import Movie from "./Movie";
 // import Axios from "axios";
 
 const Main = () => {
@@ -23,7 +23,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div>
+    <div className = "moviesContainer">
       {movies.map((movie, index) => (
         <Movie
           key={movie.index}
