@@ -4,9 +4,9 @@ import Movie from "./Movie";
 
 const Main = () => {
   //useState
-  const [movies, setMovies] = useState([]);
-  const [query, setQuery] = useState(search);
+  const [movie, setMovies] = useState([]);
   const [search, setSearch] = useState("");
+  const [query, setQuery] = useState(search);
 
   //update query
   const updateSearch = (e) => {
@@ -28,7 +28,7 @@ const Main = () => {
 
     setMovies(data);
   };
-  console.log(movies);
+  console.log(movie);
 
   //useEffect
   useEffect(() => {
@@ -36,9 +36,21 @@ const Main = () => {
   }, [query]);
 
   return (
-    <div className="moviesContainer">
-      hi
-      {movies.map((movie, index) => (
+    <div>
+      <form onSubmit={getSearch} className="search-form">
+        <input
+          className="search-field"
+          placeholder="choose film"
+          type="text"
+          value={search}
+          onChange={updateSearch}
+        />
+        <button className="search-button" type="Submit">
+          Search
+        </button>
+      </form>
+      <div className="moviesContainer">
+        {/* {movies.map((movie, index) => ( */}
         <Movie
           key={movie.index}
           id={movie.index}
@@ -46,7 +58,9 @@ const Main = () => {
           image={movie.Title}
           ImdbRating={movie.imdbRating}
         ></Movie>
-      ))}
+        {/* )) */}
+        {/* } */}
+      </div>
     </div>
   );
 };
