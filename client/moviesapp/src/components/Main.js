@@ -3,14 +3,24 @@ import Movie from "./Movie";
 // import Axios from "axios";
 
 const Main = () => {
-  //set
+  //useState
   const [movies, setMovies] = useState([]);
-  const [query, setQuery] = useState (search);
+  const [query, setQuery] = useState(search);
   const [search, setSearch] = useState("");
+
+  //update query
+  const updateSearch = (e) => {
+    setSearch(e.target.value);
+  };
+  const getSearch = (e) => {
+    e.preventDefault();
+    setQuery(search);
+    setSearch("");
+  };
+
   //fetch
   const getMovies = async () => {
     const apikey = `b8dd69ac`;
-    let query = ;
     const response = await fetch(
       `http://www.omdbapi.com/?t=${query}&apikey=${apikey}`
     );
@@ -23,10 +33,11 @@ const Main = () => {
   //useEffect
   useEffect(() => {
     getMovies();
-  }, []);
+  }, [query]);
 
   return (
-    <div className="moviesContainer">hi
+    <div className="moviesContainer">
+      hi
       {movies.map((movie, index) => (
         <Movie
           key={movie.index}
@@ -34,8 +45,8 @@ const Main = () => {
           title={movie.Poster}
           image={movie.Title}
           ImdbRating={movie.imdbRating}
-        ></Movie> 
-       ))}
+        ></Movie>
+      ))}
     </div>
   );
 };
