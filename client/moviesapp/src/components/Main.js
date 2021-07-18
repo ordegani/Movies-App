@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Movie from "./Movie";
+import "../App.css";
 // import Axios from "axios";
 
 const Main = () => {
