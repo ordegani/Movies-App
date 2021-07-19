@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../App.css";
 // import Axios from "axios";
 
-const Main = () => {
+const SearchForFilm = () => {
   //useState
   const [movie, setMovies] = useState([]);
   const [search, setSearch] = useState("");
@@ -58,4 +58,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default SearchForFilm ;

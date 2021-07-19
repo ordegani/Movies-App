@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
-import Main from "./components/Main.js";
+import SearchForFilm from "./components/SearchForFilm.js";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <div className="container">
         <Navbar />
         <br />
-        <Route exact path="/" component={Main} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/search" component={SearchForFilm} />
       </div>
     </Router>
   );
