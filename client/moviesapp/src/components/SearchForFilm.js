@@ -4,7 +4,7 @@ import "../App.css";
 
 const SearchForFilm = () => {
   //useState
-  const [movie, setMovies] = useState([]);
+  const [movie, setMovie] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState(search);
 
@@ -19,20 +19,20 @@ const SearchForFilm = () => {
   };
 
   //fetch
-  const getMovies = async () => {
+  const getMovie = async () => {
     const apikey = `b8dd69ac`;
     const response = await fetch(
       `http://www.omdbapi.com/?t=${query}&apikey=${apikey}`
     );
     const data = await response.json();
 
-    setMovies(data);
+    setMovie(data);
   };
   console.log(movie);
 
   //useEffect
   useEffect(() => {
-    getMovies();
+    getMovie();
   }, [query]);
 
   return (
@@ -49,7 +49,7 @@ const SearchForFilm = () => {
           Search
         </button>
       </form>
-      <div className="moviesContainer">
+      <div className="movieContainer">
         <h1>{movie.Title}</h1>
         <img src={movie.Poster} alt="" />
         <h3>{movie.imdbRating}</h3>
@@ -58,4 +58,4 @@ const SearchForFilm = () => {
   );
 };
 
-export default SearchForFilm ;
+export default SearchForFilm;
