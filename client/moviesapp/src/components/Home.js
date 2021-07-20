@@ -17,17 +17,17 @@ export default function Home() {
     
       useEffect(() => {
         getMovies();
-      });
+      },[movies]);
 
     return (
         <div className="moviesContainer">hi
-        {/* {movies.slice(movies.length-30).map((movie, index) => (
+  {/* {movies.results.map((movie, index) => (
           <Movie
             key={movie.index}
             id={movie.index}
-            image={movie.results[0]}     
-          />         
-        ))} */}
+ 
+          />          */}
+        {/* ))} */}
         </div>
     )
 }
