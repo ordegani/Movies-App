@@ -11,7 +11,7 @@ export default function Home() {
         );
         const data = await response.json();
     
-        setmovies(movies);
+        setmovies(movies.results);
       };
       console.log(movies);
     
