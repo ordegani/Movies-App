@@ -7,20 +7,21 @@ export default function Home() {
     const getMovies = async () => {
         const ApiKey = `5a1afd222f50a8c3a063760ec102b675`;
         const response = await fetch(
-          `https://api.themoviedb.org/3/trending/all/day?api_key=5a1afd222f50a8c3a063760ec102b675&total_pages=1`
+          `https://api.themoviedb.org/3/trending/all/day?api_key=5a1afd222f50a8c3a063760ec102b675&total_pages=1&original_title=love`
         );
         const data = await response.json();
     
         setmovies(data.results);
+        console.log(data);
       };
-      console.log(movies);
+
     
       useEffect(() => {
         getMovies();
-      });
+      },[]);
 
     return (
-        <div className="moviesContainer">hi
+        <div className="moviesContainer">
   {movies.map((movie, index, title) => (
           <Movie
             key={movie.index}
