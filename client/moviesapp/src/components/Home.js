@@ -13,8 +13,7 @@ export default function Home() {
       setMovies(response.data.results);
       console.log(response.data);
       console.log(response.data.page);
-      console.log(response.data.results.length+ " length");
-      
+      console.log(response.data.results.length + " length");
     };
     getMovies();
   }, []);
@@ -27,8 +26,8 @@ export default function Home() {
           title={movie.title}
           release={movie.release_date}
           overview={movie.overview}
-          img={"https://image.tmdb.org/t/p/original"+movie.poster_path}
-          rating = {movie.vote_average}
+          img={"https://image.tmdb.org/t/p/original" + movie.poster_path}
+          rating={movie.vote_average}
         />
       ))}
     </div>

@@ -10,8 +10,8 @@ function Navbar() {
           <Link className="link" to="/">
             Home
           </Link>
-          </li>
-          <li>
+        </li>
+        <li>
           <Link className="link" to="/search">
             Search
           </Link>

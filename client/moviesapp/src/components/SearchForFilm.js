@@ -54,8 +54,6 @@ const SearchForFilm = () => {
         <h3>{movie.Year}</h3>
         <img src={movie.Poster} alt="" />
         <h3>{movie.Plot}</h3>
-        
-        {/* TODO: conciser changing rating to release date */}
         <h3>Rating: {movie.imdbRating}</h3>
       </div>
     </div>
