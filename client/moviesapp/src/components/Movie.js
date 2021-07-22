@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Movie(key, id, title,) {
+export default function Movie(props) {
   return (
     <div className="container">
-      <h1>{title}</h1>
-      {/* <img src={image} alt="" />
-      <h3>{ImdbRating}</h3> */}
+      <h2>Movie: {props.title}</h2>
+      <h3>{props.release}</h3>
+      <p>{props.overview}</p>
     </div>
   );
 }
