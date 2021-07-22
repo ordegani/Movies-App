@@ -1,4 +1,7 @@
-.moviesContainer{
-  height:50vh;
-  width: 50vw;
+.moviesContainer {
+  display: flex;
+  align-content: space-evenly ;
 }
+
+
+

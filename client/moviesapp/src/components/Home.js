@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Movie from "./Movie";
 import axios from "axios";
+import "../App.css";
 
 export default function Home() {
   const [movies, setMovies] = useState([]);
@@ -19,7 +20,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="resultsContainer">
+    <div className="moviesContainer">
       <h1>Home 2</h1>
       {movies.map((movie) => (
         <Movie
@@ -30,6 +32,7 @@ export default function Home() {
           rating={movie.vote_average}
         />
       ))}
+    </div>
     </div>
   );
 }
