@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Movie from "./Movie";
 import axios from "axios";
 
-export default function Home2() {
+export default function Home() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
