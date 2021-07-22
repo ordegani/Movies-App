@@ -51,8 +51,12 @@ const SearchForFilm = () => {
       </form>
       <div className="movieContainer">
         <h1>{movie.Title}</h1>
+        <h3>{movie.Year}</h3>
         <img src={movie.Poster} alt="" />
-        <h3>{movie.imdbRating}</h3>
+        <h3>{movie.Plot}</h3>
+        
+        {/* TODO: conciser changing rating to release date */}
+        <h3>Rating: {movie.imdbRating}</h3>
       </div>
     </div>
   );
