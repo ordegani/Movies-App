@@ -19,7 +19,7 @@ export default function Home() {
     getMovies();
   }, []);
 
-  return (   
+  return (
     <div className="moviesContainer">
       {movies.map((movie) => (
         <Movie
@@ -30,6 +30,6 @@ export default function Home() {
           rating={movie.vote_average}
         />
       ))}
-    </div>    
+    </div>
   );
 }
