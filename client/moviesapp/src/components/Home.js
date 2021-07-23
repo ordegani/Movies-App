@@ -25,7 +25,7 @@ export default function Home() {
         <Movie
           title={movie.title}
           release={movie.release_date}
-          // overview={movie.overview}
+          overview={movie.overview}
           img={"https://image.tmdb.org/t/p/original" + movie.poster_path}
           rating={movie.vote_average}
         />

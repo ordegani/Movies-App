@@ -50,13 +50,20 @@ const SearchForFilm = () => {
         </button>
       </form>
       <div className="SmovieContainer">
+      <div className="movieInformation">
         <h1>{movie.Title}</h1>
-        <h3>{movie.Year}</h3>
-        <img src={movie.Poster} width="200" height="200" alt="" />
+        <img src={movie.Poster} alt="" />
         <h3>{movie.Plot}</h3>
+        <p>{movie.Country}  {movie.Year}  {movie.Language}  </p>
+        <p>{movie.Genre}</p>
+        <p>{movie.Director}</p>
+        <p>{movie.Actors}</p>
+        <p>{movie.Production}</p>
+        <p>{movie.Runtime}</p>
         {useEffect(() => {
-          <h3>Rating: {movie.imdbRating}</h3>;
+          <p>Rating: {movie.imdbRating}</p>;
         }, [movie])}
+      </div>
       </div>
     </div>
   );

@@ -5,7 +5,6 @@ import SearchForFilm from "./components/SearchForFilm.js";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 
-
 function App() {
 
   return (
