@@ -3,12 +3,12 @@ import "../App.css";
 
 export default function Movie(props) {
   return (
-    <div className="container">
-      <h2>Movie: {props.title}</h2>
-      <h3>{props.release}</h3>
-      <p>{props.overview}</p>
-      <img src={props.img} width="200" height="200" alt="img" />
-      <h3>Rating: {props.rating}</h3>
+    <div className="movieContainer">
+      <h4 className="movieTitle">Movie: {props.title}</h4>
+      {/* <p>{props.overview}</p> */}
+      <img src={props.img} width="300" height="300" alt="img" />
+      <h5> realeased in: {props.release}</h5>
+      <h5>Rating: {props.rating}</h5>
     </div>
   );
 }

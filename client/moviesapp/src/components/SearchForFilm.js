@@ -49,10 +49,10 @@ const SearchForFilm = () => {
           Search
         </button>
       </form>
-      <div className="movieContainer">
+      <div className="SmovieContainer">
         <h1>{movie.Title}</h1>
         <h3>{movie.Year}</h3>
-        <img src={movie.Poster} width="200" height="200"/>
+        <img src={movie.Poster} width="200" height="200" alt=""/>
         <h3>{movie.Plot}</h3>
         {useEffect(() => {
       <h3>Rating: {movie.imdbRating}</h3>
