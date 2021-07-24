@@ -36,7 +36,7 @@ const SearchForFilm = () => {
   }, [query]);
 
   return (
-    <div>
+    <div className="Scontainer">
       <form onSubmit={getSearch} className="search-form">
         <input
           className="search-field"

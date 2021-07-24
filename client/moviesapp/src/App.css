@@ -37,18 +37,22 @@ color: black;
   margin: 20px;
 }
 /* */
-.SmovieContainer{
+.Scontainer{
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
-width: 100vh;
-height: 70vh;
-justify-content:space-between;
+width: 100vw;
+align-items:center;
 padding: 20px;
 font-size: small;
 }
 .movieInformation{
-margin-right: 10vw;
+  display: flex;
+flex-direction: column;
+align-items:center;
+}
+.movieInformation>img{
+  height: 50vh;
 }
 
 
