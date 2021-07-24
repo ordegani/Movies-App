@@ -16,6 +16,11 @@ function Navbar() {
             Search
           </Link>
         </li>
+        <li>
+          <Link className="link" to="/saved">
+            Saved
+          </Link>
+        </li>
       </ul>
     </div>
   );

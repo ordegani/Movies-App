@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 
 function App() {
-useState(saved, setSaves)=useState([]);
+const [save, setsave]=useState(false);
   return (
     <Router>
       <div className="container">
@@ -14,6 +14,7 @@ useState(saved, setSaves)=useState([]);
         <br />
         <Route exact path="/" component={Home} />
         <Route exact path="/search" component={SearchForFilm} />
+        <Route path="/saved" exact><Home setsave={setsave}/> </Route>
       </div>
     </Router>
   );

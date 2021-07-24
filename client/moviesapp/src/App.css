@@ -1,33 +1,33 @@
-:root{
+:root {
   background-color: rgb(255, 234, 0);
   background-color: black;
   color: rgb(255, 234, 0);
 }
-.moviesContainer{
+.moviesContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   text-align: center;
 }
-.movieContainer>img{
-border-radius: 60px 60px 60px 60px;
-/* box-shadow: 2px 2px 2px rgb(255, 234, 0); */
+.movieContainer > img {
+  border-radius: 60px 60px 60px 60px;
+  /* box-shadow: 2px 2px 2px rgb(255, 234, 0); */
 }
-.movieContainer>p{
-  width:90%;
+.movieContainer > p {
+  width: 90%;
 }
-.movieContainer>h6{
+.movieContainer > h6 {
   border: 1px solid yellow;
   border-radius: 60px;
   padding: 5px;
 }
-.movieContainer>h4{
-max-height: 10vh;
-background-color: yellow;
-padding: 5px;
-color: black;
+.movieContainer > h4 {
+  max-height: 10vh;
+  background-color: yellow;
+  padding: 5px;
+  color: black;
 }
-.movieContainer{
+.movieContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,25 +37,60 @@ color: black;
   margin: 20px;
 }
 /* */
-.Scontainer{
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-width: 100vw;
-align-items:center;
-padding: 20px;
-font-size: small;
-}
-.movieInformation{
+.Scontainer {
   display: flex;
-flex-direction: column;
-align-items:center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100vw;
+  align-items: center;
+  padding: 20px;
+  font-size: small;
 }
-.movieInformation>img{
+.movieInformation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40vw;
+  text-align: center;
+}
+.movieInformation > img {
   height: 50vh;
 }
+/* */
+.saved {
+  border-radius: 60px;
+  color: yellow;
+  background-color: black;
+}
+.navbarUl{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
 
-
+.link{
+  text-decoration: none;
+  font-size:medium;
+  border-radius: 60px;
+  color: rgb(77, 2, 77);
+}
+Li::first-letter{
+  color: yellow;
+}
+/* */
+.search-field{
+  border-radius: 60px 0px 0px 0px;
+  border-right: black solid 2px;
+  padding: 5px;
+  outline: none;
+}
+.search-button{
+  border-radius: 0px 0px 60px 0px;
+  color: black;
+  padding: 5px;
+  background-color: yellow;
+}
 
 
 
