@@ -22,8 +22,8 @@ export default function Home({setsave}) {
   const [saved, setSaved] = useState([]);
   const addToSaved = (m) => {
     setSaved([...saved,m]);
-    console.log(saved);
-    setsave(m);
+    // console.log(saved);
+    // setsave(m);
 
   };
 
