@@ -3,7 +3,7 @@ import Movie from "./Movie";
 import axios from "axios";
 import "../App.css";
 
-export default function Home({setsave}) {
+export default function Home({ setsave }) {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -18,43 +18,41 @@ export default function Home({setsave}) {
     };
     getMovies();
   }, []);
-  
+
   const [saved, setSaved] = useState([]);
   const addToSaved = (m) => {
-    setSaved([...saved,m]);
+    setSaved([...saved, m]);
     // console.log(saved);
     // setsave(m);
-
   };
 
   return (
     <div>
-    <div className="moviesContainer">
-      {movies.map((movie) => (
-        <Movie
-          title={movie.title}
-          release={movie.release_date}
-          overview={movie.overview}
-          img={"https://image.tmdb.org/t/p/original" + movie.poster_path}
-          rating={movie.vote_average}
-          onClick={addToSaved}
-        />
-      ))}
-    </div>
+      <div className="moviesContainer">
+        {movies.map((movie) => (
+          <Movie
+            title={movie.title}
+            release={movie.release_date}
+            overview={movie.overview}
+            img={"https://image.tmdb.org/t/p/original" + movie.poster_path}
+            rating={movie.vote_average}
+            onClick={addToSaved}
+          />
+        ))}
+      </div>
 
-    <div className="savedMoviesContainer">
-      {saved.map((save) => (
-        <Movie
-          title={save.title}
-          release={save.release_date}
-          overview={save.overview}
-          img={"https://image.tmdb.org/t/p/original" + save.poster_path}
-          rating={save.vote_average}
-          onClick={addToSaved}
-        />
-      ))}
-    </div>
-
+      <div className="savedMoviesContainer">
+        {saved.map((save) => (
+          <Movie
+            title={save.title}
+            release={save.release_date}
+            overview={save.overview}
+            img={"https://image.tmdb.org/t/p/original" + save.poster_path}
+            rating={save.vote_average}
+            onClick={addToSaved}
+          />
+        ))}
+      </div>
     </div>
   );
 }
