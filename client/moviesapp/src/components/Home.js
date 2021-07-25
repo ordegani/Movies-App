@@ -17,7 +17,7 @@ export default function Home({ save, setsave }) {
   }, []);
 
   const addToSaved = (m) => {
-    setsave((save) => [...save, m])
+    setsave((save) => [...save, m]);
   };
 
   return (

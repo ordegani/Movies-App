@@ -28,18 +28,3 @@ export default function Movie({
     </div>
   );
 }
-
-// import React from 'react';
-
-// const Movie = ({title, onClick}) => {
-//     return(
-//         <div className="M">
-//         <h1>{title}</h1>
-
-//         <button className="saved" onClick={()=>onClick({title})} type="Submit">S</button>
-
-//         </div>
-//     );
-// };
-
-// export default Movie;
