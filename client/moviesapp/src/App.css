@@ -85,6 +85,7 @@ Li::first-letter{
   border-right: black solid 2px;
   padding: 5px;
   outline: none;
+  text-align: center;
 }
 .search-button{
   border-radius: 0px 0px 60px 0px;

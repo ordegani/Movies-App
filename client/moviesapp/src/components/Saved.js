@@ -12,7 +12,7 @@ export default function Saved({ save, setsave }) {
   return (
     <div className="homeContainer">
       <button className="reset" onClick={() => setsave([])}>
-        Reset Favorites
+        Reset saved
       </button>
       <div className="savedMoviesContainer">
         {save.map((movie) => (
