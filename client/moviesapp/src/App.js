@@ -4,18 +4,22 @@ import "./App.css";
 import SearchForFilm from "./components/SearchForFilm.js";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import Saved from "./components/Saved"
 
 function App() {
-  const [save, setsave] = useState(false);
+  const [save, setsave] = useState([]);
   return (
     <Router>
       <div className="container">
         <Navbar />
         <br />
-        <Route exact path="/" component={Home} />
+        {/* <Route exact path="/" component={Home} /> */}
         <Route exact path="/search" component={SearchForFilm} />
+        <Route path="/" exact>
+          <Home save={save} setsave={setsave}/>
+        </Route>
         <Route path="/saved" exact>
-          <Home setsave={setsave} />
+          <Saved save={save} setsave={setsave}/>
         </Route>
       </div>
     </Router>
