@@ -17,9 +17,21 @@ export default function Home({ save, setsave }) {
   }, []);
 
   const addToSaved = (m) => {
-    setsave((save) => [...save, m]);
-  };
+    let isExists = false;
 
+    save.find((item) => {
+      if (item.title === m.title) {
+        isExists = true;
+        console.log("double");
+      }
+    });
+
+    if (!isExists) {
+      setsave((save) => [...save, m]);
+      console.log(m);
+    }
+  };
+  // setsave((save) => [...save, m]);
   return (
     <div className="moviesContainer">
       {movies.map((movie) => (
