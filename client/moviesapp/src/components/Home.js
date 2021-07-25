@@ -16,23 +16,23 @@ export default function Home({ save, setsave }) {
     getMovies();
   }, []);
 
-
   const addToSaved = (m) => {
     setsave((save) => [...save, m]);
   };
 
   return (
-      <div className="moviesContainer">
-        {movies.map((movie) => (
-          <Movie
-            title={movie.title}
-            release={movie.release_date}
-            overview={movie.overview}
-            img={"https://image.tmdb.org/t/p/original" + movie.poster_path}
-            rating={movie.vote_average}
-            onClick={addToSaved}
-          />
-        ))}
-      </div>
+    <div className="moviesContainer">
+      {movies.map((movie) => (
+        <Movie
+          title={movie.title}
+          release={movie.release_date}
+          overview={movie.overview}
+          img={"https://image.tmdb.org/t/p/original" + movie.poster_path}
+          rating={movie.vote_average}
+          text="♥"
+          onClick={addToSaved}
+        />
+      ))}
+    </div>
   );
 }
