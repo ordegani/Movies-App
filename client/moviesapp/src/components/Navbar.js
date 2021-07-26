@@ -12,13 +12,13 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link className="link" to="/search">
-            Search
+          <Link className="link" to="/saved">
+            Saved
           </Link>
         </li>
         <li>
-          <Link className="link" to="/saved">
-            Saved
+          <Link className="link" to="/search">
+            Search
           </Link>
         </li>
       </ul>
