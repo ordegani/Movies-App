@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useEffect} from "react";
 import Movie from "./Movie";
 
 export default function Saved({ save, setsave }) {
@@ -12,8 +12,8 @@ export default function Saved({ save, setsave }) {
   return (
     <div className="homeContainer">
       <button className="reset" onClick={() => setsave([])}>
-        Reset Saved
-      </button>
+        Reset 
+      </button>♥
       <div className="savedMoviesContainer">
         {save.map((movie) => (
           <Movie
