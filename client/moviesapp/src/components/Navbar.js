@@ -7,6 +7,11 @@ function Navbar() {
     <div>
       <ul className="navbarUl">
         <li>
+        <Link className="link" to="/authentication">
+            login
+          </Link>
+          </li>
+          <li>
           <Link className="link" to="/">
             Home
           </Link>

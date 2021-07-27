@@ -1,4 +1,5 @@
 import {React, useEffect} from "react";
+import { useLocation } from 'react-router-dom';
 import Movie from "./Movie";
 
 export default function Saved({ save, setsave }) {
@@ -8,7 +9,7 @@ export default function Saved({ save, setsave }) {
   const remove = (element) => {
     setsave(save.filter((save) => save.title !== element.title));
   };
-
+  // console.log(window.location.href);
   return (
     <div className="homeContainer">
       <button className="reset" onClick={() => setsave([])}>
