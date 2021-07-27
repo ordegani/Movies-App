@@ -22,8 +22,13 @@ function Navbar() {
           </Link>
         </li>
         <li>
-        <Link className="link" to="/authentication">
-            login
+        <Link className="link" to="/api/users/register">
+            Register
+          </Link>
+          </li>
+          <li>
+        <Link className="link" to="/api/users/login">
+            Login
           </Link>
           </li>
       </ul>

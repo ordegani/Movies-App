@@ -111,7 +111,7 @@ Li::first-letter{
   text-align: center;
 }
 /* */
-.autheticationContainer{
+.autheticationContainer,.loginContainer{
   display: flex;
   flex-direction: column;
   text-align: center;
