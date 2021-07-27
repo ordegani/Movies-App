@@ -6,11 +6,6 @@ function Navbar() {
   return (
     <div>
       <ul className="navbarUl">
-        <li>
-        <Link className="link" to="/authentication">
-            login
-          </Link>
-          </li>
           <li>
           <Link className="link" to="/">
             Home
@@ -26,6 +21,11 @@ function Navbar() {
             Search
           </Link>
         </li>
+        <li>
+        <Link className="link" to="/authentication">
+            login
+          </Link>
+          </li>
       </ul>
     </div>
   );
