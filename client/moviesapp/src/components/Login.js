@@ -9,16 +9,17 @@ export default function Login() {
 
   return (
     <div className="loginContainer">
-      Welcome Back :)
-      <form>
+      Welcome Back 🎬
+      
+      <form className="loginForm">
         <input
-          className="input1"
+          className="input"
           placeholder="email"
           type="text"
           value={email}
         />
         <input
-          className="input2"
+          className="input"
           placeholder="password"
           type="text"
           value={password}

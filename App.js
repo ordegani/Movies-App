@@ -1,17 +1,17 @@
-//backend only
 const express = require("express");
 const mongoose = require("mongoose");
+require('dotenv').config();
 const cors = require('cors');
-const setupController = require("./controllers/setupControllers");
-const apicontroller = require("./controllers/apiControllers");
+const setupController = require('./controller/authControllers');
+// const apicontroller = require("./controller/apiControllers");
 
 const app = express();
 
 app.use(cors())
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 6000;
 
-const uri = "";
+const uri = "mongodb+srv://or:test@cluster0.jkazr.mongodb.net/users?retryWrites=true&w=majority"
 
 app.use(express.json());
 
@@ -23,5 +23,26 @@ app.get("/", (req, res) => {
 
 setupController(app);
 apicontroller(app);
+
+
+const bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
+
+mongoose.Promise = global.Promise
+mongoose.connect(process.env.DATABASE, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(cookieParser());
+
+
+
+   const { auth } = require("./middleware/auth")
+   const { RegisterUser, LoginUser, LogoutUser,getUserDetails } = require('./controller/authControllers');
+   app.post("/api/users/register",RegisterUser);
+   app.post("/api/users/login",LoginUser);
+   app.get("/authentication",auth,getUserDetails);
+   app.get("/uthentication", auth, LogoutUser);
+
+
 
 app.listen(port, () => console.log("app is running on port: " + port));

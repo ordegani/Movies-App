@@ -1,6 +1,7 @@
 import {React, useEffect} from "react";
 import { useLocation } from 'react-router-dom';
 import Movie from "./Movie";
+import axios from "axios";
 
 export default function Saved({ save, setsave }) {
   save.forEach((element) => {
@@ -10,6 +11,7 @@ export default function Saved({ save, setsave }) {
     setsave(save.filter((save) => save.title !== element.title));
   };
   // console.log(window.location.href);
+ 
   return (
     <div className="homeContainer">
       <button className="reset" onClick={() => setsave([])}>

@@ -30,31 +30,31 @@ let lastName;
     return (
 
         <div className="autheticationContainer">
-            Welcome To Movie App!
+            <h2>Welcome To Movie App!</h2>
             <form className="utheticationForm"> 
             <input
-          className="input1"
+          className="input"
           placeholder="email"
           type="text"
           value={email}
          
         />
                     <input
-          className="input2"
+          className="input"
           placeholder="password"
           type="text"
           value={password}
        
         />
                     <input
-          className="input3"
+          className="input"
           placeholder="name"
           type="text"
           value={firstName}
      
         />
                     <input
-          className="input4"
+          className="input"
           placeholder="last name"
           type="text"
           value={lastName}
@@ -64,7 +64,7 @@ let lastName;
         className="submit"
 
         type="Submit"
-      >Submit
+      >Join
       </button>
             </form>
         </div>

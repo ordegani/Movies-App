@@ -115,9 +115,25 @@ Li::first-letter{
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
-  height: 50vh;
+  margin-top: 15vh;
+  align-items: center;
 }
+.utheticationForm>button,.loginForm>button{
+  margin-top: 2vh;
+  background-color: yellow;
+  border-radius: 45px 60px;
+  font-weight: bolder;
+}
+.utheticationForm>input,.loginForm>input{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vh;
+  width: 45vw;
+  text-align: center;
+  border: yellow 1px solid;
+}
+
+
 
 
 
