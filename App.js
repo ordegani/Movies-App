@@ -11,8 +11,6 @@ app.use(cors())
 
 const port = process.env.PORT || 6000;
 
-const uri = "mongodb+srv://or:test@cluster0.jkazr.mongodb.net/users?retryWrites=true&w=majority"
-
 app.use(express.json());
 
 mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true });

@@ -9,8 +9,8 @@ export default function Login() {
 
   return (
     <div className="loginContainer">
-      Welcome Back 🎬
-      
+      <h2>Welcome Back</h2>
+      <h2>🎬</h2>
       <form className="loginForm">
         <input
           className="input"
