@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Movie from "./Movie";
 import axios from "axios";
 import "../App.css";
+import { useHistory } from "react-router-dom";
 
 export default function Home({ save, setsave }) {
   const [movies, setMovies] = useState([]);
@@ -30,8 +31,10 @@ export default function Home({ save, setsave }) {
       setsave((save) => [...save, m]);
       console.log(m);
     }
+     window.location = '/saved';
   };
   // setsave((save) => [...save, m]);
+
   return (
     <div className="moviesContainer">
       {movies.map((movie) => (

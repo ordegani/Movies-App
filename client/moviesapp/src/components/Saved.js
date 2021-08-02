@@ -11,7 +11,15 @@ export default function Saved({ save, setsave }) {
     setsave(save.filter((save) => save.title !== element.title));
   };
   // console.log(window.location.href);
- 
+ useEffect(() => {
+   const postSave=()=>{
+  axios
+  .post("/api/users/login", save)
+  .then((res) => console.log(res)); console.log(save); }
+   return () => {
+     postSave();
+   }
+ }, [save])
   return (
     <div className="homeContainer">
       <button className="reset" onClick={() => setsave([])}>
