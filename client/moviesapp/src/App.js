@@ -16,7 +16,6 @@ function App() {
         <br />
         {/* <Route exact path="/api/users/register" component={Authentication}></Route>
         <Route exact path="/api/users/login" component={Login}></Route> */}
-        {/* <Route exact path="/" component={Home} /> */}
         <Route exact path="/search" component={SearchForFilm} />
         <Route path="/" exact>
           <Home save={save} setsave={setsave}/>
