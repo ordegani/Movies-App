@@ -31,9 +31,7 @@ export default function Home({ save, setsave }) {
       setsave((save) => [...save, m]);
       console.log(m);
     }
-     window.location = '/saved';
   };
-  // setsave((save) => [...save, m]);
 
   return (
     <div className="moviesContainer">
