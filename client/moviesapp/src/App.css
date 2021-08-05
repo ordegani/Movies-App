@@ -52,7 +52,6 @@
   align-items: center;
   max-width: 40vw;
   text-align: center;
-
 }
 .movieInformation > img {
   height: 50vh;
@@ -64,68 +63,71 @@
   background-color: black;
 }
 
-.navbarUl{
+.navbarUl {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   list-style: none;
 }
 
-.link{
+.link {
   text-decoration: none;
-  font-size:medium;
+  font-size: medium;
   border-radius: 60px;
   color: rgb(77, 2, 77);
 }
-Li::first-letter{
+Li::first-letter {
   color: yellow;
 }
 /* */
-.search-field{
+.search-field {
   border-radius: 60px 0px 0px 0px;
   border-right: black solid 2px;
   padding: 5px;
   outline: none;
   text-align: center;
 }
-.search-button{
+.search-button {
   border-radius: 0px 0px 60px 0px;
   color: black;
   padding: 5px;
   background-color: yellow;
 }
 /* */
-.reset{
+.reset {
   border-radius: 60px;
   color: yellow;
   background-color: black;
 }
-.homeContainer{
+.homeContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.savedMoviesContainer{
+.savedMoviesContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   text-align: center;
 }
 /* */
-.autheticationContainer,.loginContainer{
+.autheticationContainer,
+.loginContainer {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-top: 15vh;
   align-items: center;
 }
-.utheticationForm>button,.loginForm>button{
+.utheticationForm > button,
+.loginForm > button {
   margin-top: 2vh;
   background-color: yellow;
   border-radius: 45px 60px;
   font-weight: bolder;
 }
-.utheticationForm>input,.loginForm>input{
+.utheticationForm > input,
+.loginForm > input {
   display: flex;
   flex-direction: column;
   margin-top: 1vh;
@@ -133,13 +135,3 @@ Li::first-letter{
   text-align: center;
   border: yellow 1px solid;
 }
-
-
-
-
-
-
-
-
-
-
