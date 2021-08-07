@@ -34,12 +34,12 @@ app.use(cookieParser());
 
 
 
-   const { auth } = require("./middleware/auth")
-   const { RegisterUser, LoginUser, LogoutUser,getUserDetails } = require('./controller/authControllers');
-   app.post("/api/users/register",RegisterUser);
-   app.post("/api/users/login",LoginUser);
-   app.get("/authentication",auth,getUserDetails);
-   app.get("/uthentication", auth, LogoutUser);
+  //  const { auth } = require("./middleware/auth")
+  //  const { RegisterUser, LoginUser, LogoutUser,getUserDetails } = require('./controller/authControllers');
+  //  app.post("/api/users/register",RegisterUser);
+  //  app.post("/api/users/login",LoginUser);
+  //  app.get("/authentication",auth,getUserDetails);
+  //  app.get("/uthentication", auth, LogoutUser);
 
 
 
