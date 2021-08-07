@@ -3,41 +3,40 @@ require("dotenv").config();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const SALT = 10;
-const Schema = mongoose.Schema
+const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-    email: {
-        type: String,
-        required: [true, "reqiured"],
-        trim: true,
-        unique: 1
-        },
-        password: {
-        type: String,
-        required: [true,"required"],
-        minlength: 6
-        },
-        firstName: {
-        type: String,
-        required: [true,"required"],
-        trim: true,
-        maxlength: 100
-       },
-        lastName: {
-        type: String,
-        required: [true,"required"],
-        trim: true,
-        maxlength: 100
-       },
-       saved:{
-           type:Array,
-           required:[false],
-       },
-        token: {
-        type: String
-        }
-       });
-
+  email: {
+    type: String,
+    required: [true, "reqiured"],
+    trim: true,
+    unique: 1,
+  },
+  password: {
+    type: String,
+    required: [true, "required"],
+    minlength: 6,
+  },
+  firstName: {
+    type: String,
+    required: [true, "required"],
+    trim: true,
+    maxlength: 100,
+  },
+  lastName: {
+    type: String,
+    required: [true, "required"],
+    trim: true,
+    maxlength: 100,
+  },
+  saved: {
+    type: Array,
+    required: [false],
+  },
+  token: {
+    type: String,
+  },
+});
 
 // userSchema.pre("save", function (next) {
 //     var user = this;
@@ -72,7 +71,7 @@ const userSchema = new Schema({
 //    userSchema.statics.findByToken = function (token, callBack) {
 //     var user = this;
 //     jwt.verify(token, process.env.SECRETE, function (err, decode) {//this decode must give user_id if token is valid .ie decode=user_id
-    
+
 //     user.findOne({ "_id": decode, "token": token }, function (err, user) {
 //     if (err) return callBack(err);
 //     callBack(null, user);
@@ -80,6 +79,6 @@ const userSchema = new Schema({
 //    });
 //    };
 
-const User = mongoose.model('User', userSchema)
+const User = mongoose.model("User", userSchema);
 
-module.exports = User
+module.exports = User;
