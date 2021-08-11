@@ -1,41 +1,17 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
-const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
-const SALT = 10;
+// const bcrypt = require("bcrypt");
+// const jwt = require("jsonwebtoken");
+// const SALT = 10;
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-  email: {
-    type: String,
-    required: [true, "reqiured"],
+username:{
+    type:string,
+    required: true,
+    unique: true,
     trim: true,
-    unique: 1,
-  },
-  password: {
-    type: String,
-    required: [true, "required"],
-    minlength: 6,
-  },
-  firstName: {
-    type: String,
-    required: [true, "required"],
-    trim: true,
-    maxlength: 100,
-  },
-  lastName: {
-    type: String,
-    required: [true, "required"],
-    trim: true,
-    maxlength: 100,
-  },
-  saved: {
-    type: Array,
-    required: [false],
-  },
-  token: {
-    type: String,
-  },
+}
 });
 
 // userSchema.pre("save", function (next) {
