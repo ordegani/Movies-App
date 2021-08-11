@@ -6,12 +6,12 @@ require("dotenv").config();
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-username:{
-    type:string,
+  username: {
+    type: string,
     required: true,
     unique: true,
     trim: true,
-}
+  },
 });
 
 // userSchema.pre("save", function (next) {
