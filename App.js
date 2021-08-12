@@ -14,9 +14,9 @@ app.use(express.json());
 
 mongoose.connect(uri, { useUnifiedTopology: true, useNewUrlParser: true });
 
-app.get("/", (req, res) => {
-  res.send("MOVIES APP!");
-});
+// app.get("/", (req, res) => {
+//   res.send("MOVIES APP!");
+// });
 
 setupController(app);
 apicontroller(app);
