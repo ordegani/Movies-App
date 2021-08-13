@@ -17,7 +17,7 @@ function App() {
         <Route
           exact
           path="/api/users/register"
-          component={Authentication}
+          component={Join}
         ></Route>
         <Route exact path="/api/users/login" component={Login}></Route>
         <Route exact path="/search" component={SearchForFilm} />
