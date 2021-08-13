@@ -32,9 +32,9 @@ export default function Join() {
   // }
 
   return (
-    <div className="autheticationContainer">
+    <div className="joinContainer">
       <h2>Welcome To Movie App!</h2>
-      <form className="utheticationForm">
+      <form className="joinForm">
         {/* <input
           className="input"
           placeholder="email"
