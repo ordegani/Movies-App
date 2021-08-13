@@ -5,7 +5,7 @@ import SearchForFilm from "./components/SearchForFilm.js";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Saved from "./components/Saved";
-import Authentication from "./components/Join";
+import Join from "./components/Join";
 import Login from "./components/Login.js";
 function App() {
   const [save, setsave] = useState([]);
