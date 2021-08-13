@@ -1,11 +1,17 @@
 import {React, useState, useEffect} from 'react'
+import axios from "axios";
 import "../App.css";
 
 export default function Authentication() {
-let email;
-let password;
-let firstName;
-let lastName;
+  let username;
+  const saveNewUser = (username)=>{
+    axios.post('http://localhost:5000/add', username)
+    .then(res => console.log(res.data));
+  }
+// let email;
+// let password;
+// let firstName;
+// let lastName;
 
 //     const saveEmail=(e)=>{
 //         req.email=e;
@@ -32,37 +38,36 @@ let lastName;
         <div className="autheticationContainer">
             <h2>Welcome To Movie App!</h2>
             <form className="utheticationForm"> 
-            <input
+            {/* <input
           className="input"
           placeholder="email"
           type="text"
           value={email}
          
-        />
-                    <input
+        /> */}
+                    {/* <input
           className="input"
           placeholder="password"
           type="text"
           value={password}
        
-        />
-                    <input
+        /> */}
+                    {/* <input
           className="input"
           placeholder="name"
           type="text"
           value={firstName}
      
-        />
+        /> */}
                     <input
           className="input"
-          placeholder="last name"
+          placeholder="Username"
           type="text"
-          value={lastName}
-        //   onChange={saveLastName}
+          value={username}
+          onChange={saveNewUser}
         />
       <button
         className="submit"
-
         type="Submit"
       >Join
       </button>

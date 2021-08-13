@@ -21,7 +21,7 @@ function Navbar() {
             Search
           </Link>
         </li>
-        {/* <li>
+        <li>
         <Link className="link" to="/api/users/register">
             Register
           </Link>
@@ -30,7 +30,7 @@ function Navbar() {
         <Link className="link" to="/api/users/login">
             Login
           </Link>
-          </li> */}
+          </li>
       </ul>
     </div>
   );
