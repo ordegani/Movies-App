@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
 const cors = require("cors");
+const usersRouter = require('./routes/userRoute');
 // const setupController = require("./controller/authControllers");
 
 const app = express();
@@ -36,6 +37,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
+app.use('/users', usersRouter);
 //  const { auth } = require("./middleware/auth")
 //  const { RegisterUser, LoginUser, LogoutUser,getUserDetails } = require('./controller/authControllers');
 //  app.post("/api/users/register",RegisterUser);
