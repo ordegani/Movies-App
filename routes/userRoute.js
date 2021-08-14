@@ -15,4 +15,5 @@ router.route("users/add").post((req, res)=>{
     .then (()=>res.json('added successfully'))
     .carch(()=>res.status(400).json("error:"+err));
 });
+module.exports = router;
 

@@ -2,10 +2,8 @@ import { React, useState, useEffect } from "react";
 import "../App.css";
 
 export default function Login() {
-  let email;
-  let password;
-  let firstName;
-  let lastName;
+  let username;
+
 
   return (
     <div className="loginContainer">
@@ -14,16 +12,16 @@ export default function Login() {
       <form className="loginForm">
         <input
           className="input"
-          placeholder="email"
+          placeholder="username"
           type="text"
-          value={email}
+          value={username}
         />
-        <input
+        {/* <input
           className="input"
           placeholder="password"
           type="text"
           value={password}
-        />
+        /> */}
         <button className="submit" type="Submit">
           Submit
         </button>
