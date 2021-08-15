@@ -6,7 +6,7 @@ export default function Join() {
   let username;
   const saveNewUser = (username) => {
     axios
-      .post("http://localhost:5000/add", username)
+      .post("http://localhost:5000/users/add", username)
       .then((res) => console.log(res.data));
   };
 
