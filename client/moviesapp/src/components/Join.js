@@ -2,7 +2,7 @@ import { React, useState, useEffect } from "react";
 import axios from "axios";
 import "../App.css";
 
-export default function Join() {
+export default function Join({username, setUsername}) {
   let username;
 
   const updateUser = (e) => {
