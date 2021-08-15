@@ -4,6 +4,14 @@ import "../App.css";
 
 export default function Join() {
   let username;
+
+  const [user,setUser] = useState("");
+
+  const updateUser = (e) => {
+    e.preventDefault();
+    setUser(e.target.value);
+  };
+
   const saveNewUser = (username) => {
     axios
       .post("http://localhost:5000/users/add", username)
