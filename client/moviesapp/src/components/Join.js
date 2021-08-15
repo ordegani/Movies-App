@@ -3,19 +3,18 @@ import axios from "axios";
 import "../App.css";
 
 export default function Join({username, setUsername}) {
-  let username;
 
   const updateUser = (e) => {
     e.preventDefault();
     setUsername(e.target.value);
-  };
 
   const saveNewUser = (username) => {
     axios
       .post("http://localhost:5000/users/add", username)
       .then((res) => console.log(res.data));
   };
-
+  console.log(username);
+};
   return (
     <div className="joinContainer">
       <h2>Welcome To Movie App!</h2>
