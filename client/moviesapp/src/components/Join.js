@@ -5,11 +5,9 @@ import "../App.css";
 export default function Join() {
   let username;
 
-  const [user,setUser] = useState("");
-
   const updateUser = (e) => {
     e.preventDefault();
-    setUser(e.target.value);
+    setUsername(e.target.value);
   };
 
   const saveNewUser = (username) => {
@@ -27,7 +25,7 @@ export default function Join() {
           placeholder="Username"
           type="text"
           value={username}
-          onChange={saveNewUser}
+          onChange={updateUser}
         />
         <button className="submit" type="Submit">
           Join
