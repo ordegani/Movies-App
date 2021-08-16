@@ -9,7 +9,7 @@ export default function Join() {
     e.preventDefault();
     setUsername(e.target.value);
 
-    const saveNewUser = async(username) => {
+    const saveNewUser = async (username) => {
       axios
         .post("http://localhost:5000/users/add", username)
         .then((res) => console.log(res.data));
