@@ -22,12 +22,12 @@ function Navbar() {
           </Link>
         </li>
         <li>
-        <Link className="link" to="/api/users/register">
-            Register
+        <Link className="link" to="/users">
+            Join
           </Link>
           </li>
           <li>
-        <Link className="link" to="/api/users/login">
+        <Link className="link" to="/users/login">
             Login
           </Link>
           </li>

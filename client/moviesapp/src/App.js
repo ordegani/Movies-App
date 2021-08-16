@@ -9,21 +9,17 @@ import Join from "./components/Join";
 import Login from "./components/Login.js";
 function App() {
   const [save, setsave] = useState([]);
-  const [username,setUsername] = useState("");
   return (
     <Router>
       <div className="container">
         <Navbar />
         <br />
-        <Route path="/user" exact>
-          <Home username={username} setUsername={setUsername} />
+
+        <Route
+          path="/users"exact>
+          <Join/>
         </Route>
-        {/* <Route
-          exact
-          path="/api/users/register"
-          component={Join}
-        ></Route> */}
-        <Route exact path="/api/users/login" component={Login}></Route>
+        <Route exact path="/users/login" component={Login}></Route>
         <Route exact path="/search" component={SearchForFilm} />
         <Route path="/" exact>
           <Home save={save} setsave={setsave} />
@@ -31,6 +27,7 @@ function App() {
         <Route path="/saved" exact>
           <Saved save={save} setsave={setsave} />
         </Route>
+
       </div>
     </Router>
   );

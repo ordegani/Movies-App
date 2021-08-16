@@ -2,19 +2,20 @@ import { React, useState, useEffect } from "react";
 import axios from "axios";
 import "../App.css";
 
-export default function Join({username, setUsername}) {
+export default function Join() {
+  const [username, setUsername] = useState("");
 
   const updateUser = (e) => {
     e.preventDefault();
     setUsername(e.target.value);
 
-  const saveNewUser = (username) => {
-    axios
-      .post("http://localhost:5000/users/add", username)
-      .then((res) => console.log(res.data));
+    const saveNewUser = async(username) => {
+      axios
+        .post("http://localhost:5000/users/add", username)
+        .then((res) => console.log(res.data));
+    };
+    console.log(username);
   };
-  console.log(username);
-};
   return (
     <div className="joinContainer">
       <h2>Welcome To Movie App!</h2>
@@ -34,25 +35,24 @@ export default function Join({username, setUsername}) {
   );
 }
 
+// let email;
+// let password;
+// let firstName;
+// let lastName;
 
-  // let email;
-  // let password;
-  // let firstName;
-  // let lastName;
+//     const saveEmail=(e)=>{
+//         req.email=e;
+//         }
 
-  //     const saveEmail=(e)=>{
-  //         req.email=e;
-  //         }
+//     const savePassword=(e)=>{
+//         setUser({"password":e})
+//     }
 
-  //     const savePassword=(e)=>{
-  //         setUser({"password":e})
-  //     }
+//     const saveFirstName=(e)=>{
+//         setUser({"firstName":e})
+//     }
+//     const saveLastName=(e)=>{
+//         setUser({"lasName":e})
+//     }
 
-  //     const saveFirstName=(e)=>{
-  //         setUser({"firstName":e})
-  //     }
-  //     const saveLastName=(e)=>{
-  //         setUser({"lasName":e})
-  //     }
-
-  // }
+// }
