@@ -5,9 +5,9 @@ import "../App.css";
 export default function Login() {
   const getUsers=()=>{
     axios
-  .post("http://localhost:5000/users/")
+  .get("http://localhost:5000/users/")
   //TODO condition to check if username=username2?
-  .then((res) => console.log(res.data));
+  .then((res) => console.log(res.data.username));
 }
   return (
     <div className="loginContainer">
@@ -18,15 +18,9 @@ export default function Login() {
           className="input"
           placeholder="username"
           type="text"
-          value={username2}
           onChange={getUsers}
         />
-        {/* <input
-          className="input"
-          placeholder="password"
-          type="text"
-          value={password}
-        /> */}
+
         <button className="submit" type="Submit">
           Go
         </button>

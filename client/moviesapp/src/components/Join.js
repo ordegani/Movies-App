@@ -3,7 +3,7 @@ import axios from "axios";
 import "../App.css";
 
 export default function Join() {
-  const [username, setUsername] = useState("");
+  const [username, setUsername] = useState();
 
   const updateUser = (e) => {
     e.preventDefault();
