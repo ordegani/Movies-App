@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <div>
       <ul className="navbarUl">
-          <li>
+        <li>
           <Link className="link" to="/">
             Home
           </Link>
@@ -22,15 +22,15 @@ function Navbar() {
           </Link>
         </li>
         <li>
-        <Link className="link" to="/users">
+          <Link className="link" to="/users">
             Join
           </Link>
-          </li>
-          <li>
-        <Link className="link" to="/users/login">
+        </li>
+        <li>
+          <Link className="link" to="/users/login">
             Login
           </Link>
-          </li>
+        </li>
       </ul>
     </div>
   );
