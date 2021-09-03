@@ -6,9 +6,9 @@ const movieSchema = new Schema({
     title:String,
     release:String,
     overview:String,
-    img,
+    img:String,
     rating:Number,
-    onClick,
+    onClick:Function,
     text:String,
 })
 
