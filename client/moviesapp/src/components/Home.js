@@ -17,19 +17,20 @@ export default function Home({ save, setsave }) {
   }, []);
 
   const addToSaved = (m) => {
-    let isExists = false;
+    
+    // let isExists = false;
 
-    save.find((item) => {
-      if (item.title === m.title) {
-        isExists = true;
-        console.log("double");
-      }
-    });
+    // save.find((item) => {
+    //   if (item.title === m.title) {
+    //     isExists = true;
+    //     console.log("double");
+    //   }
+    // });
 
-    if (!isExists) {
-      setsave((save) => [...save, m]);
-      console.log(m);
-    }
+    // if (!isExists) {
+    //   setsave((save) => [...save, m]);
+    //   console.log(m);
+    // }
   };
 
   return (
