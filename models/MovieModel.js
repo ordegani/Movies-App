@@ -4,6 +4,12 @@ const Schema = mongoose.Schema
 
 const movieSchema = new Schema({
     title:String,
+    release:String,
+    overview:String,
+    img,
+    rating:Number,
+    onClick,
+    text:String,
 })
 
 const Movie = mongoose.model('Movie', movieSchema)
