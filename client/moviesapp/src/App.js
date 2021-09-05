@@ -16,9 +16,8 @@ function App() {
         <Navbar />
         <br />
 
-        <Route
-          path="/users"exact>
-          <Join/>
+        <Route path="/users" exact>
+          <Join />
         </Route>
         <Route exact path="/users/login" component={Login}></Route>
         <Route exact path="/search" component={SearchForFilm} />
@@ -28,7 +27,6 @@ function App() {
         <Route path="/saved" exact>
           <Saved save={save} setsave={setsave} />
         </Route>
-
       </div>
     </Router>
   );
