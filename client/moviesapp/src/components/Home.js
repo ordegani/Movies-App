@@ -16,24 +16,23 @@ export default function Home({ save, setsave }) {
     getMovies();
   }, []);
 
-  // const addToSaved = 
+  // const addToSaved =
   // (m) => {
-    // const addToSaved = axios.post('', Movie)
-    
-  
-    // let isExists = false;
+  // const addToSaved = axios.post('', Movie)
 
-    // save.find((item) => {
-    //   if (item.title === m.title) {
-    //     isExists = true;
-    //     console.log("double");
-    //   }
-    // });
+  // let isExists = false;
 
-    // if (!isExists) {
-    //   setsave((save) => [...save, m]);
-    //   console.log(m);
-    // }
+  // save.find((item) => {
+  //   if (item.title === m.title) {
+  //     isExists = true;
+  //     console.log("double");
+  //   }
+  // });
+
+  // if (!isExists) {
+  //   setsave((save) => [...save, m]);
+  //   console.log(m);
+  // }
   // };
 
   return (
@@ -46,7 +45,9 @@ export default function Home({ save, setsave }) {
           img={"https://image.tmdb.org/t/p/original" + movie.poster_path}
           rating={movie.vote_average}
           text="♥"
-          onClick={async()=> await axios.post('http://localhost:5000/', {Movie})}
+          onClick={async () =>
+            await axios.post("http://localhost:5000/", { Movie })
+          }
 
           /* onClick={addToSaved} */
         />
