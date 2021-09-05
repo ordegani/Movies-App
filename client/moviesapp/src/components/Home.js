@@ -16,8 +16,11 @@ export default function Home({ save, setsave }) {
     getMovies();
   }, []);
 
-  const addToSaved = (m) => {
+  // const addToSaved = 
+  // (m) => {
+    // const addToSaved = axios.post('', Movie)
     
+  
     // let isExists = false;
 
     // save.find((item) => {
@@ -31,7 +34,7 @@ export default function Home({ save, setsave }) {
     //   setsave((save) => [...save, m]);
     //   console.log(m);
     // }
-  };
+  // };
 
   return (
     <div className="moviesContainer">
@@ -43,7 +46,9 @@ export default function Home({ save, setsave }) {
           img={"https://image.tmdb.org/t/p/original" + movie.poster_path}
           rating={movie.vote_average}
           text="♥"
-          onClick={addToSaved}
+          onClick={async()=> await axios.post('http://localhost:5000/', {Movie})}
+
+          /* onClick={addToSaved} */
         />
       ))}
     </div>

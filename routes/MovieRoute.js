@@ -6,10 +6,9 @@ router.route('/').post((req, res) => {
     const release = req.body.release;
     const img = req.body.img;
     const rating = Number(req.body.rating);
+    const onClick= Function(req.body.rating);
+    const text = req.body.rating;
 
-    
-  
-  
     const newMovie= new Movie({
         title,
         release,
@@ -20,3 +19,4 @@ router.route('/').post((req, res) => {
         text,
     })
 })
+module.exports = router;
