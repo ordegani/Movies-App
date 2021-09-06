@@ -3,6 +3,14 @@ import Movie from "./Movie";
 import axios from "axios";
 
 export default function Saved() {
+  useEffect(() => {
+    const fetch = async () => {
+      const data = await axios.get("http://localhost:5000/");
+      console.log(data);
+    };
+    fetch();
+  }, []);
+  
   save.forEach((element) => {
     console.log(element);
   });
