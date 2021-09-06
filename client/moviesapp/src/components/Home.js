@@ -3,7 +3,7 @@ import Movie from "./Movie";
 import axios from "axios";
 import "../App.css";
 
-export default function Home() {
+export default function Home({ save, setsave }) {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -16,24 +16,25 @@ export default function Home() {
     getMovies();
   }, []);
 
-  // const addToSaved =
-  // (m) => {
-  // const addToSaved = axios.post('', Movie)
+  const addToSaved = 
+  (m) => {
+    // const addToSaved = axios.post('https://artnote.herokuapp.com/', Movie)
+    
+  
+    let isExists = false;
 
-  // let isExists = false;
+    save.find((item) => {
+      if (item.title === m.title) {
+        isExists = true;
+        console.log("double");
+      }
+    });
 
-  // save.find((item) => {
-  //   if (item.title === m.title) {
-  //     isExists = true;
-  //     console.log("double");
-  //   }
-  // });
-
-  // if (!isExists) {
-  //   setsave((save) => [...save, m]);
-  //   console.log(m);
-  // }
-  // };
+    if (!isExists) {
+      setsave((save) => [...save, m]);
+      console.log(m);
+    }
+  };
 
   return (
     <div className="moviesContainer">
@@ -45,11 +46,7 @@ export default function Home() {
           img={"https://image.tmdb.org/t/p/original" + movie.poster_path}
           rating={movie.vote_average}
           text="♥"
-          onClick={async () =>
-            await axios.post("http://localhost:5000/", { movie })
-          }
-
-          /* onClick={addToSaved} */
+          onClick={addToSaved}
         />
       ))}
     </div>

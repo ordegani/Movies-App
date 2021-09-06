@@ -17,6 +17,17 @@ router.route('/').post((req, res) => {
         rating,
         onClick,
         text,
-    })
+    });
+
+newMovie.save()
+.then(() => res.json('added!'))
+.catch(err => res.status(400).json('Error: ' + err));
 })
+
+router.route('/saved').get((req, res) => {
+    Movie.find()
+      .then(movies => res.json(movies))
+      .catch(err => res.status(400).json('Error: ' + err));
+  });
+
 module.exports = router;

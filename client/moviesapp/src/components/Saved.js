@@ -2,7 +2,7 @@ import { React, useEffect } from "react";
 import Movie from "./Movie";
 import axios from "axios";
 
-export default function Saved() {
+export default function Saved({save, setsave}) {
   useEffect(() => {
     const fetch = async () => {
       const data = await axios.get("http://localhost:5000/");
@@ -11,9 +11,9 @@ export default function Saved() {
     fetch();
   }, []);
 
-  // save.forEach((element) => {
-  //   console.log(element);
-  // });
+  save.forEach((element) => {
+    console.log(element);
+  });
   const remove = (element) => {
     setsave(save.filter((save) => save.title !== element.title));
   };
@@ -39,7 +39,7 @@ export default function Saved() {
       </button>
       ♥
       <div className="savedMoviesContainer">
-        {save.map((data) => (
+        {save.map((movie) => (
           <Movie
             title={movie.title}
             release={movie.release}
