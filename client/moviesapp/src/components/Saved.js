@@ -10,10 +10,10 @@ export default function Saved() {
     };
     fetch();
   }, []);
-  
-  save.forEach((element) => {
-    console.log(element);
-  });
+
+  // save.forEach((element) => {
+  //   console.log(element);
+  // });
   const remove = (element) => {
     setsave(save.filter((save) => save.title !== element.title));
   };
