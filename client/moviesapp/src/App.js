@@ -9,8 +9,6 @@ import Join from "./components/Join";
 import Login from "./components/Login.js";
 
 function App() {
-  //TODO - change from useState to call to the backend
-  // const [save, setsave] = useState([]);
   return (
     <Router>
       <div className="container">
