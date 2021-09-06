@@ -39,7 +39,7 @@ export default function Saved() {
       </button>
       ♥
       <div className="savedMoviesContainer">
-        {save.map((movie) => (
+        {save.map((data) => (
           <Movie
             title={movie.title}
             release={movie.release}
