@@ -46,7 +46,7 @@ export default function Home({ save, setsave }) {
           rating={movie.vote_average}
           text="♥"
           onClick={async () =>
-            await axios.post("http://localhost:5000/", { Movie })
+            await axios.post("http://localhost:5000/", { movie })
           }
 
           /* onClick={addToSaved} */
