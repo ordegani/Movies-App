@@ -87,20 +87,25 @@ Li::first-letter {
   outline: none;
   text-align: center;
 }
+.search-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .search-button {
   /* border-radius: 0px 0px 60px 0px;
   color: black;
   padding: 5px;
   background-color: yellow; */
-  border-top: 25px solid transparent;
-  border-left: 50px solid red;
-  border-bottom: 25px solid transparent;
+	width: 0;
+	height: 0;
+  border-left: 10vh solid #555;
+	border-top: 2vw solid transparent;
+	border-bottom: 2vw solid transparent;
+  margin: 1rem;
   background-color: black;
-  
 }
-.search-button_Container{
-  size: 25px;
-}
+
 /* */
 .reset {
   border-radius: 60px;
