@@ -95,6 +95,11 @@ Li::first-letter {
   border-top: 25px solid transparent;
   border-left: 50px solid red;
   border-bottom: 25px solid transparent;
+  background-color: black;
+  
+}
+.search-button_Container{
+  size: 25px;
 }
 /* */
 .reset {
