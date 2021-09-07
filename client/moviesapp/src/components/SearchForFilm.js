@@ -45,28 +45,29 @@ const SearchForFilm = () => {
           value={search}
           onChange={updateSearch}
         />
-    
+
         <button className="search-button" type="Submit">
           Search
         </button>
-  
       </form>
       <div className="SmovieContainer">
-      <div className="movieInformation">
-        <h1>{movie.Title}</h1>
-        <img src={movie.Poster} alt="" />
-        <h3>{movie.Plot}</h3>
-        <p>{movie.Country}  {movie.Year}</p>
-        <p>{movie.Language}</p>
-        <p>{movie.Genre}</p>
-        <p>{movie.Director}</p>
-        <p>{movie.Actors}</p>
-        <p>{movie.Production}</p>
-        <p>{movie.Runtime}</p>
-        {useEffect(() => {
-          <p>Rating: {movie.imdbRating}</p>;
-        }, [movie])}
-      </div>
+        <div className="movieInformation">
+          <h1>{movie.Title}</h1>
+          <img src={movie.Poster} alt="" />
+          <h3>{movie.Plot}</h3>
+          <p>
+            {movie.Country} {movie.Year}
+          </p>
+          <p>{movie.Language}</p>
+          <p>{movie.Genre}</p>
+          <p>{movie.Director}</p>
+          <p>{movie.Actors}</p>
+          <p>{movie.Production}</p>
+          <p>{movie.Runtime}</p>
+          {useEffect(() => {
+            <p>Rating: {movie.imdbRating}</p>;
+          }, [movie])}
+        </div>
       </div>
     </div>
   );
