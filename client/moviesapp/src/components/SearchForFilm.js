@@ -45,11 +45,11 @@ const SearchForFilm = () => {
           value={search}
           onChange={updateSearch}
         />
-        <div className="search-button_container">
+    
         <button className="search-button" type="Submit">
-          {/* Search */}
+          Search
         </button>
-        </div>
+  
       </form>
       <div className="SmovieContainer">
       <div className="movieInformation">
