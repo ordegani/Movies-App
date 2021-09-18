@@ -81,7 +81,7 @@ Li::first-letter {
 }
 /* */
 .search-field {
-  border-radius: 60px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
   border-right: black solid 2px;
   padding: 5px;
   outline: none;
@@ -91,6 +91,7 @@ Li::first-letter {
   border-radius: 0px 0px 0px 0px;
   color: black;
   padding: 5px;
+  margin-left: 5px;
   background-color: yellow;
 }
 /* */
