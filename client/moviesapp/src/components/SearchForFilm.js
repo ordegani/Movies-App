@@ -47,7 +47,7 @@ const SearchForFilm = () => {
         />
 
         <button className="search-button" type="Submit">
-          Search
+        U+25B6
         </button>
       </form>
       <div className="SmovieContainer">
