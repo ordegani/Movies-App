@@ -10,7 +10,6 @@ export default function Movie({
   onClick,
   text,
 }) {
-  
   return (
     <div className="movieContainer">
       <h4>{title}</h4>
