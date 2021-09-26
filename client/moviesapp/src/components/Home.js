@@ -38,6 +38,7 @@ export default function Home({ save, setsave }) {
 
   return (
     <div className="moviesContainer">
+      <h2>Top rated today</h2>
       {movies.map((movie) => (
         <Movie
           title={movie.title}
