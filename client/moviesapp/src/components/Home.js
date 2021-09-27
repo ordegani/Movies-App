@@ -16,11 +16,9 @@ export default function Home({ save, setsave }) {
     getMovies();
   }, []);
 
-  const addToSaved = 
-  (m) => {
+  const addToSaved = (m) => {
     // const addToSaved = axios.post('https://artnote.herokuapp.com/', Movie)
-    
-  
+
     let isExists = false;
 
     save.find((item) => {
