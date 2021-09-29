@@ -31,7 +31,7 @@ export default function Saved({save, setsave}) {
   return (
     <div className="homeContainer">
       <button
-        className={save.length ==1 ? "hidden" : "reset"}
+        className={save.length !== 1 ? "hidden" : "reset"}
         //TODO axios.delet
         onClick={() => setsave([])}
       >
