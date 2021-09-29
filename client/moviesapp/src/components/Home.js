@@ -40,7 +40,7 @@ export default function Home({ save, setsave }) {
        <div className="moviesContainer">
       {movies.map((movie) => (
         <Movie
-          title={movie.title}
+          title={movie.title?movie.title:"*data missing at the moment*"}
           release={movie.release_date}
           overview={movie.overview}
           img={"https://image.tmdb.org/t/p/original" + movie.poster_path}
