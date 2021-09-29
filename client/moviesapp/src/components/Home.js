@@ -35,8 +35,9 @@ export default function Home({ save, setsave }) {
   };
 
   return (
-    <div className="moviesContainer">
-      <h2>Top rated today</h2>
+    <div className="homeContainer">
+       <h2>Top rated today</h2>
+       <div className="moviesContainer">
       {movies.map((movie) => (
         <Movie
           title={movie.title}
@@ -48,6 +49,7 @@ export default function Home({ save, setsave }) {
           onClick={addToSaved}
         />
       ))}
+    </div>
     </div>
   );
 }
