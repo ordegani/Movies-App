@@ -94,6 +94,9 @@ Li::first-letter {
   margin-left: 5px;
   background-color: yellow;
 }
+.hidden{
+  display: none;
+}
 /* */
 .reset {
   border-radius: 60px;
