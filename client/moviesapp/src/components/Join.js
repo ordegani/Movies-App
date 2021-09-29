@@ -9,13 +9,13 @@ export default function Join() {
     e.preventDefault();
     setUsername(e.target.value);
 
-    const saveNewUser = async (username) => {
-      axios
-        .post("http://localhost:5000/users/add", username)
-        .then((res) => console.log(res.data));
-    };
-    console.log(username);
-  };
+  //   const saveNewUser = async (username) => {
+  //     axios
+  //       .post("http://localhost:5000/users/add", username)
+  //       .then((res) => console.log(res.data));
+  //   };
+  //   console.log(username);
+  // };
   return (
     <div className="joinContainer">
       <h2>Welcome To Movie App!</h2>
