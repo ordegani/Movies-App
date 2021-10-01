@@ -62,7 +62,7 @@ const SearchForFilm = () => {
           <p>Director: {movie.Director}</p>
           <p>Writer: {movie.Writer}</p>
           <p>Actors: {movie.Actors}</p>
-          <p>{movie.Production}</p>
+          {/* <p>{movie.Production}</p> */}
           <p>{movie.Runtime}</p>
           {useEffect(() => {
             <p>Rating: {movie.imdbRating}</p>;
