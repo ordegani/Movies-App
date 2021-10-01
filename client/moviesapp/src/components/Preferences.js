@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react"
 import "../App.css"
+import Movie from "./Movie"
 
 export default function Preferences() {
+    const modeChange = (e)=>{
+    }
     return (
         <div>
-            <button onChange={}>Dark</button>
-            <button onChange={}>Light</button>
+            <button>Dark</button>
+            <button>Light</button>
         </div>
     )
 }
