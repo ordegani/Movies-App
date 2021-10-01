@@ -28,8 +28,7 @@ function Navbar() {
         </li>
         <li>
           <Link className="link" to="/users/login">
-            Login
-            Preferences
+            Login Preferences
           </Link>
         </li>
         <li>
