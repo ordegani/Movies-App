@@ -4,8 +4,8 @@ import "../App.css"
 export default function Preferences() {
     return (
         <div>
-            <h2>Tarantino (Dark Mode)</h2>
-            <h2>Almodovar (Day light)</h2>
+            <h4>Tarantino (Dark Mode)</h4>
+            <h4>Almodovar (Day light)</h4>
         </div>
     )
 }

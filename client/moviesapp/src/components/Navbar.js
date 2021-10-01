@@ -21,18 +21,18 @@ function Navbar() {
             Search
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link className="link" to="/users">
             Join
           </Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link className="link" to="/users/login">
-            Login Preferences
+            Login
           </Link>
-        </li>
+        </li> */}
         <li>
-          <Link className="link" to="/users/login">
+          <Link className="link" to="/prefrences">
             Preferences
           </Link>
         </li>
