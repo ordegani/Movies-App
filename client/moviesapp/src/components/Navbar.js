@@ -29,6 +29,12 @@ function Navbar() {
         <li>
           <Link className="link" to="/users/login">
             Login
+            Preferences
+          </Link>
+        </li>
+        <li>
+          <Link className="link" to="/users/login">
+            Preferences
           </Link>
         </li>
       </ul>
