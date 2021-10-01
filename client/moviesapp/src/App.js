@@ -7,6 +7,8 @@ import Home from "./components/Home";
 import Saved from "./components/Saved";
 import Join from "./components/Join";
 import Login from "./components/Login.js";
+import Preferences from "./components/Preferences";
+
 function App() {
   const [save, setsave] = useState([]);
   return (
@@ -26,6 +28,7 @@ function App() {
         <Route path="/saved" exact>
           <Saved save={save} setsave={setsave} />
         </Route>
+        <Route exact path="/prefrences" component={Preferences}></Route>
       </div>
     </Router>
   );
