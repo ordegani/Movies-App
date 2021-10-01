@@ -57,10 +57,11 @@ const SearchForFilm = () => {
           <p>
             {movie.Country} {movie.Year}
           </p>
-          <p>{movie.Language}</p>
+          <p>Language: {movie.Language}</p>
           <p>{movie.Genre}</p>
-          <p>{movie.Director}</p>
-          <p>{movie.Actors}</p>
+          <p>Director: {movie.Director}</p>
+          <p>Writer: {movie.Writer}</p>
+          <p>Actors: {movie.Actors}</p>
           <p>{movie.Production}</p>
           <p>{movie.Runtime}</p>
           {useEffect(() => {
