@@ -10,8 +10,12 @@ export default function Preferences() {
 
   return (
     <div>
-      <button value="dark" onClick={updateMode}>Dark</button>
-      <button value="light" onClick={updateMode}>Light</button>
+      <button value="dark" onClick={updateMode}>
+        Dark
+      </button>
+      <button value="light" onClick={updateMode}>
+        Light
+      </button>
     </div>
   );
 }
