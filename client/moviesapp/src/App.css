@@ -27,7 +27,7 @@
   padding: 5px;
   color: black;
 }
-.noAvailableData{
+.noAvailableData {
   margin-top: 3vh;
 }
 .movieContainer {
@@ -97,7 +97,7 @@ Li::first-letter {
   margin-left: 5px;
   background-color: yellow;
 }
-.hidden{
+.hidden {
   display: none;
 }
 /* */
