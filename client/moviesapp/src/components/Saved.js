@@ -37,7 +37,7 @@ export default function Saved({save, setsave}) {
       >
         Reset
       </button>
-      ♥
+      <h4 className={save.length !== 1 ? "hidden" : "reset"}>♥</h4>
       <div className="savedMoviesContainer">
         {save.map((movie) => (
           <Movie
