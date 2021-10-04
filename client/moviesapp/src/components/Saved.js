@@ -2,7 +2,7 @@ import { React, useEffect } from "react";
 import Movie from "./Movie";
 import axios from "axios";
 
-export default function Saved({save, setsave}) {
+export default function Saved({ save, setsave }) {
   useEffect(() => {
     const fetch = async () => {
       const data = await axios.get("http://localhost:5000/");
