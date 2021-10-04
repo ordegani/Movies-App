@@ -61,7 +61,7 @@ const SearchForFilm = () => {
           <p>{movie.Genre}</p>
           {/* <p>{movie.Writer}</p> */}
           <p>{movie.Actors}</p>
-          <p>{movie.Production}</p>
+          {/* <p>{movie.Production}</p> */}
           <p>{movie.Runtime}</p>
           {useEffect(() => {
             <p>Rating: {movie.imdbRating}</p>;
