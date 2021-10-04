@@ -54,9 +54,9 @@ const SearchForFilm = () => {
           <h1>{movie.Title}</h1>
           <img src={movie.Poster} alt="" />
           <h3>{movie.Plot}</h3>
-          <p>
-            {movie.Country} {movie.Year}
-          </p>
+          <p>{movie.Country}</p>
+          <p>{movie.Year}</p>
+          
           <p>Language: {movie.Language}</p>
           <p>{movie.Genre}</p>
           <p>Director: {movie.Director}</p>
