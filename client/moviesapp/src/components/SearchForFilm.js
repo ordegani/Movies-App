@@ -52,16 +52,16 @@ const SearchForFilm = () => {
       <div className="SmovieContainer">
         <div className="movieInformation">
           <h1>{movie.Title}</h1>
+          <p>{movie.Director}</p>
           <img src={movie.Poster} alt="" />
           <h3>{movie.Plot}</h3>
           <p>{movie.Year}</p>
           <p>{movie.Country}</p>
-          <p>Language: {movie.Language}</p>
+          <p>{movie.Language}</p>
           <p>{movie.Genre}</p>
-          <p>Director: {movie.Director}</p>
-          <p>Writer: {movie.Writer}</p>
-          <p>Actors: {movie.Actors}</p>
-          {/* <p>{movie.Production}</p> */}
+          {/* <p>{movie.Writer}</p> */}
+          <p>{movie.Actors}</p>
+          <p>{movie.Production}</p>
           <p>{movie.Runtime}</p>
           {useEffect(() => {
             <p>Rating: {movie.imdbRating}</p>;
