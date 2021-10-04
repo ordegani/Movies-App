@@ -21,11 +21,14 @@
   border-radius: 60px;
   padding: 5px;
 }
-.movieContainer > h4 {
+.movietTitle {
   max-height: 10vh;
   background-color: yellow;
   padding: 5px;
   color: black;
+}
+.noAvailableData{
+  margin-top: 3vh;
 }
 .movieContainer {
   display: flex;
