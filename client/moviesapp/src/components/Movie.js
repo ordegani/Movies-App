@@ -12,7 +12,7 @@ export default function Movie({
 }) {
   return (
     <div className="movieContainer">
-      <h4 className={title ? "movietTitle": "noAvailableData"}>{title}</h4>
+      <h4 className={title ? "movietTitle" : "noAvailableData"}>{title}</h4>
       <img src={img} width="300" height="300" alt="img" />
       <h5> realeased in: {release ? release : "no information found"}</h5>
       <h6>Rating: {rating}</h6>
