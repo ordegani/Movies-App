@@ -56,7 +56,6 @@ const SearchForFilm = () => {
           <h3>{movie.Plot}</h3>
           <p>{movie.Country}</p>
           <p>{movie.Year}</p>
-          
           <p>Language: {movie.Language}</p>
           <p>{movie.Genre}</p>
           <p>Director: {movie.Director}</p>
