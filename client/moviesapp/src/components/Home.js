@@ -35,7 +35,7 @@ export default function Home({ save, setsave, mode }) {
   };
 
   return (
-    <div className="homeContainer">
+    <div className={mode == "light"? "light":"homeContainer"}>
       <h2>Top rated today</h2>
       <div className="moviesContainer">
         {movies.map((movie) => (
