@@ -3,7 +3,7 @@ import "../App.css";
 import Movie from "./Movie";
 
 export default function Preferences() {
-  const [mode, setmode] = useState("");
+  const [mode, setmode] = useState("dark");
   const updateMode = (e) => {
     setmode(e.target.value);
   };

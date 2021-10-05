@@ -3,7 +3,7 @@ import Movie from "./Movie";
 import axios from "axios";
 import "../App.css";
 
-export default function Home({ save, setsave }) {
+export default function Home({ save, setsave, mode }) {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
