@@ -6,6 +6,7 @@ export default function Preferences() {
   const [mode, setmode] = useState("dark");
   const updateMode = (e) => {
     setmode(e.target.value);
+    console.log(mode);
   };
 
   return (
