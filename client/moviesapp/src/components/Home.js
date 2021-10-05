@@ -37,7 +37,7 @@ export default function Home({ save, setsave, mode }) {
   return (
     <div className="homeContainer">
       <h2>Top rated today</h2>
-      <div className={mode}>
+      <div className="moviesContainer">
         {movies.map((movie) => (
           <Movie
             title={movie.title}
