@@ -32,8 +32,8 @@ function App() {
         </Route>
         <Route path="/preferences" exact>
           <Preferences mode={mode} setmode={setmode} />
-        </Route> 
-             </div>
+        </Route>
+      </div>
     </Router>
   );
 }
