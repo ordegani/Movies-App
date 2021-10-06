@@ -21,16 +21,7 @@ function Navbar() {
             Search
           </Link>
         </li>
-        {/* <li>
-          <Link className="link" to="/users">
-            Join
-          </Link>
-        </li> */}
-        {/* <li>
-          <Link className="link" to="/users/login">
-            Login
-          </Link>
-        </li> */}
+
         <li>
           <Link className="link" to="/preferences">
             Preferences
