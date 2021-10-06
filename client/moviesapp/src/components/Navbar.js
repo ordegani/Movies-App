@@ -21,7 +21,6 @@ function Navbar() {
             Search
           </Link>
         </li>
-
         <li>
           <Link className="link" to="/preferences">
             Preferences
