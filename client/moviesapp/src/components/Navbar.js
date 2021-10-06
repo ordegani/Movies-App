@@ -32,7 +32,7 @@ function Navbar() {
           </Link>
         </li> */}
         <li>
-          <Link className="link" to="/prefrences">
+          <Link className="link" to="/preferences">
             Preferences
           </Link>
         </li>

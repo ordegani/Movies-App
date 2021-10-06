@@ -11,8 +11,8 @@ import Preferences from "./components/Preferences";
 
 function App() {
   const [save, setsave] = useState([]);
-  const [mode, setmode] = useState("");
-  
+  const [mode, setmode] = useState("dark");
+
   return (
     <Router>
       <div className="container">
@@ -30,8 +30,10 @@ function App() {
         <Route path="/saved" exact>
           <Saved save={save} setsave={setsave} />
         </Route>
-        <Route exact path="/prefrences" component={Preferences}></Route>
-      </div>
+        <Route path="/preferences" exact>
+          <Preferences mode={mode} setmode={setmode} />
+        </Route> 
+             </div>
     </Router>
   );
 }
