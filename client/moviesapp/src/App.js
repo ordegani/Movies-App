@@ -12,6 +12,7 @@ import Preferences from "./components/Preferences";
 function App() {
   const [save, setsave] = useState([]);
   const [mode, setmode] = useState("");
+  
   return (
     <Router>
       <div className="container">
