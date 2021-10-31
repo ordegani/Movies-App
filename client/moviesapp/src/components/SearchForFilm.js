@@ -27,7 +27,6 @@ const SearchForFilm = () => {
   };
   console.log(movie);
 
-  //useEffect
   useEffect(() => {
     getMovie();
   }, [query]);
