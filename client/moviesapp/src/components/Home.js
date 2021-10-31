@@ -17,7 +17,6 @@ export default function Home({ save, setsave, mode }) {
   }, []);
 
   const addToSaved = (m) => {
-    // const addToSaved = axios.post('https://artnote.herokuapp.com/', Movie)
 
     let isExists = false;
 
