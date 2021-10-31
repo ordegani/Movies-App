@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../App.css";
 
 const SearchForFilm = () => {
-
   const [movie, setMovie] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState(search);
