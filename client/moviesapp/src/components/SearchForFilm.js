@@ -16,7 +16,6 @@ const SearchForFilm = () => {
     setSearch("");
   };
 
-  //fetch
   const getMovie = async () => {
     const apikey = `b8dd69ac`;
     const response = await fetch(
