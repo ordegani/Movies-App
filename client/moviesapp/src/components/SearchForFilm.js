@@ -3,7 +3,7 @@ import "../App.css";
 // import Axios from "axios";
 
 const SearchForFilm = () => {
-  //useState
+
   const [movie, setMovie] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState(search);
