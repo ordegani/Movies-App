@@ -17,7 +17,6 @@ export default function Home({ save, setsave, mode }) {
   }, []);
 
   const addToSaved = (m) => {
-
     let isExists = false;
 
     save.find((item) => {
