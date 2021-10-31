@@ -7,7 +7,6 @@ const SearchForFilm = () => {
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState(search);
 
-  //update query
   const updateSearch = (e) => {
     setSearch(e.target.value);
   };
