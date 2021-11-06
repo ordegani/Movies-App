@@ -4,7 +4,7 @@ import "../App.css";
 export default function Preferences({ mode, setmode }) {
   const updateMode = (e) => {
     setmode(e.target.value);
-    console.log(mode);
+
   };
 
   return (
