@@ -30,9 +30,9 @@ function App() {
         <Route path="/saved" exact>
           <Saved save={save} setsave={setsave} />
         </Route>
-        <Route path="/preferences" exact>
+        {/* <Route path="/preferences" exact>
           <Preferences mode={mode} setmode={setmode} />
-        </Route>
+        </Route> */}
       </div>
     </Router>
   );
