@@ -31,7 +31,6 @@ export default function Home({ save, setsave, mode }) {
       console.log(m);
     }
   };
-
   return (
     <div className="homeContainer">
       <h2>Top rated today</h2>
